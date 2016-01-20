@@ -1,0 +1,531 @@
+/*通用样式*/
+html
+{
+	font-size : 20px;
+	height:100%;
+	-webkit-text-size-adjust:none;
+}
+html {
+    font-size : 20px;
+}
+@media only screen and (min-width: 401px){
+    html {
+        font-size: 25px !important;
+    }
+}
+@media only screen and (min-width: 428px){
+    html {
+        font-size: 26.75px !important;
+    }
+}
+@media only screen and (min-width: 481px){
+    html {
+        font-size: 30px !important; 
+    }
+}
+@media only screen and (min-width: 569px){
+    html {
+        font-size: 35px !important; 
+    }
+}
+@media only screen and (min-width: 641px){
+    html {
+        font-size: 40px !important; 
+    }
+}
+body
+{
+	height:100%;
+	max-width:980px;
+	min-width:320px;
+	margin:0 auto;
+	padding:0;
+	font:normal 0.8em/1.6,Tahoma,Arial,Roboto,sans-serif;
+	font-family: HelveticaLTStd-BlkCond !important;
+	background-color:#F8D700;
+	-webkit-box-sizing:border-box;
+    overflow: hidden;
+    color: #445F96;
+}
+/*mask蒙版样式*/
+.mask
+{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /*display: none;*/
+}
+/*开始游戏Box样式*/
+.gameStartBox
+{
+    width: 80%;
+    height: 20rem;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:#F8D700;
+    background-image: url("../assets/pointBg.png");
+    text-align: center;
+    overflow: hidden;
+    z-index: 2;
+    display: -webkit-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    /*display: none;*/
+}
+#gameStart
+{
+    width: 100%;
+}
+#gameStartBtn
+{
+    width: 80%;
+}
+.gameExplain
+{
+    text-align: left;
+    font-size: 0.5rem;
+    line-height: 0.9rem;
+    margin: 0.6rem;
+    margin-top: 0;
+    overflow: auto;
+    display: -webkit-box;
+    display: box;
+    -webkit-box-flex: 1;
+}
+.gameStartBox>p
+{
+    text-align: left;
+    font-size: 1rem;
+    margin: 0.2rem 0.6rem;
+    font-weight: bold;
+}
+.gameExplain span
+{
+    color: #E42324;
+    font-weight: bold;
+}
+/*主内容区域样式*/
+.wrapper
+{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    display: -webkit-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    background-image: url("../assets/pointBg.png");
+}
+.header
+{
+    width: 90%;
+    position: relative;
+    display: inline-block;
+}
+#gameHeader
+{
+    width: 70%;
+}
+.xlResultStyle
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -18%;
+    width: 37%;
+}
+.xlIconStyle
+{
+    position: absolute;
+    top: 79%;
+    left: 58%;
+    margin-left: -18%;
+    width: 20%;
+}
+.desc
+{
+    -webkit-box-flex: 1;
+    position: relative;
+}
+.desc>img
+{
+    width: 80%;
+    display: inline-block;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.footer
+{
+    position: relative;
+    font-size: 0;
+    width: 100%;
+}
+#gameBtnArea
+{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+#userSt
+{
+    position: absolute;
+    top: 3%;
+    left: 10%;
+    width: 20%;
+    /*padding: 10%;*/
+}
+#userBu
+{
+    position: absolute;
+    top: 3%;
+    left: 41%;
+    width: 20%;
+}
+#userJd
+{
+    position: absolute;
+    top: 3%;
+    left: 73%;
+    width: 17%;
+}
+.star
+{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    text-align: left;
+}
+.star>img
+{
+    width: 27%;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    z-index: 1;
+}
+.star>p,.time>p
+{
+    position: absolute;
+    margin: 0;
+    top: 45%;
+    left: 22%;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.star>p>span,.time>p>span
+{
+    color: #E62128;
+}
+.time>p
+{
+    left: 20%;
+}
+.time
+{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: left;
+}
+.time>img
+{
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    z-index: 1;
+}
+.barBox
+{
+    position: absolute;
+    top: 10%;
+    left: 33%;
+    width: 50%;
+    height: 1rem;
+    border: 2px solid;
+    border-radius: 0 15px 15px 0;
+}
+.bar
+{
+    width: 100%;
+    height: 100%;
+    background-color: #144AC8;
+    border-radius: 0 15px 15px 0;
+}
+/*隐藏滚动条，为啥无效？？？*/
+/*::-webkit-scrollbar
+{
+    display: none;
+}*/
+
+.fail
+{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    height: 10rem;
+    background-color: #144AC8;
+    border: 1px solid #144AC8;
+    border-radius: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: bold;
+    z-index: 2;
+    display: none;
+}
+.fail>img
+{
+    width: 80%;
+}
+.fail>p
+{
+    margin: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5.6rem;
+    font-size: 1.3rem;
+    z-index: 3;
+    color: #144AC8;
+}
+.win
+{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    height: 14rem;
+    background-color: #E62128;
+    border: 1px solid #E62128;
+    border-radius: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 3rem;
+    font-weight: bold;
+    z-index: 2;
+    display: none;
+}
+.win>img
+{
+    width: 80%;
+}
+.win>p
+{
+    margin: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5.8rem;
+    font-size: 1.3rem;
+    z-index: 3;
+    color: #144AC8;
+}
+/*红包领取页面*/
+.packetBox
+{
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/pointBg.png");
+    background-color: #F8D700;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    text-align: center;
+    -webkit-box-sizing:border-box;
+    padding: 0.6rem;
+    display: none;
+}
+.packetBox>p
+{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 1px #0464FF;
+}
+#flyPacket
+{
+    width: 50%;
+}
+.updatePhoneBox
+{
+    width: 100%;
+    position: relative;
+    font-size: 1rem;
+}
+.updatePhoneBox>span
+{
+    vertical-align: middle;
+    text-decoration: underline;
+}
+.updatePhoneBox>img
+{
+    vertical-align: middle;
+    width: 23%;
+}
+
+.xlResultAni
+{
+    -webkit-animation-name: xlResultAni;
+    animation-name: xlResultAni;
+    -webkit-animation-duration: 0.05s;
+    animation-duration: 0.05s;
+}
+@-webkit-keyframes xlResultAni
+{
+    0%{
+        -webkit-transform: scale3d(1,1,1);
+        transform: scale3d(1,1,1);
+        opacity: 1;
+    }
+    100%{
+        -webkit-transform: scale3d(1.5,1.5,1.5);
+        transform: scale3d(1.5,1.5,1.5);
+        opacity: 0;
+    }
+}
+@keyframes xlResultAni
+{
+    0%{
+        -webkit-transform: scale3d(1,1,1);
+        transform: scale3d(1,1,1);
+        opacity: 1;
+    }
+    100%{
+        -webkit-transform: scale3d(1.5,1.5,1.5);
+        transform: scale3d(1.5,1.5,1.5);
+        opacity: 0;
+    }
+}
+
+.barAni
+{
+    -webkit-animation-name: barAni;
+    animation-name: barAni;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes barAni
+{
+    0%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+@keyframes barAni
+{
+    0%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+
+.whiteBtn
+{
+    background-image: url("../assets/white_btn.png");
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    margin: 7% 10%;
+    color: #0464FF;
+    font-size: 1rem;
+    /*line-height: 3rem;*/
+}
+
+*{
+    -webkit-user-select:none;
+    user-select:none;
+}
+
+#preloadBox
+{
+    width: 100%;
+    height: 100%;
+    background-color: #F8D700;
+    position: absolute;
+    z-index: 99;
+}
+#preloadMask
+{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    text-align: center;
+}
+#pgBorder
+{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+#pg1
+{
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    display: none;
+}
+#pg2
+{
+    width: 30%;
+    position: absolute;
+    top: 51%;
+    left: 35%;
+    display: none;
+}
+#pg3
+{
+    width: 30%;
+    position: absolute;
+    top: 50.5%;
+    left: 64%;
+    display: none;
+}
+#preloadNum
+{
+    position: absolute;
+    top: 55%;
+    color: #F8D700;
+    font-size: 3rem;
+    left: 35%;
+}

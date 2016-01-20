@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>零号线双12</title>
+	<meta name="viewport" content="width = device-width,initial-scale = 1.0,maximum-scale = 1,minimum-scale = 1,user-scalable = no">
+	<link rel="stylesheet" href="css/main.css">
+	
+</head>
+<body>
+	<div id="preloadBox">
+		<div id="preloadMask"></div>
+		<img id="pgBorder" src="assets/pg_border.png" >
+		<img id="pg1" src="assets/pg1.png" >
+		<img id="pg2" src="assets/pg2.png" >
+		<img id="pg3" src="assets/pg3.png" >
+		<div id="preloadNum">0%</div>
+	</div>
+	<div class="gameStartBox">
+		<img id="gameStart" src="assets/gameStart.png" >
+		<img id="gameStartBtn" src="assets/gameStartBtn.png" >
+		<p>游戏说明：</p>
+		<div class="gameExplain">
+			<div id="iscrollWrapper">
+				<div id="iscroll">
+				1.选择能赢小零的手势，赢得1分，平得0分，输扣1分，20秒内，得分越多奖励越大。<br/>
+				2.达到8分可得100减20劵，达到15分可得50减10劵，达到22分可得20减10劵，<span>每日限量5000张，先到先得。</span><br/>
+				3.达到领奖条件时，用户可<span>选立即领取红包，则游戏结束；</span>或放弃该红包继续挑战。如果用户<span>选择继续挑战，且在时间结束时未达到下一个奖励等级则挑战失败。</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<div class="header">
+			<img id="gameHeader" src="assets/gameHeader.png" >
+			<div id="xlResult">
+				<img class="xlResultStyle" src="assets/xl_bu.png" >
+			</div>
+			<div id="xlIcon">
+				<!-- <img class="xlIconStyle" src="#" > -->
+			</div>
+		</div>
+		<div class="desc">
+			<img src="assets/game_desc.png" >
+		</div>
+		<div class="footer">
+			<img id="gameBtnArea" src="assets/game_btn_area.png" >
+			<img id="userSt" src="assets/user_st.png" >
+			<img id="userBu" src="assets/user_bu.png" >
+			<img id="userJd" src="assets/user_jd.png" >
+			<div class="star">
+				<img src="assets/star.png" >
+				<div class="barBox">
+					<div class="bar"></div>
+				</div>
+				<p>得分<span id="score">0</span>分</p>
+			</div>
+			<div class="time" >
+				<img src="assets/time.png" >
+				<div class="barBox">
+					<div id="timeBar" class="bar"></div>
+				</div>
+				<p>时间<span id="time">20</span>秒</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="mask"></div>
+
+	<div class="fail">
+		<div>很遗憾！<br/>挑战失败</div>
+		<!-- <img src="assets/white_btn.png" > -->
+		<div id="share" class="whiteBtn">分享再玩一次</div>
+	</div>
+
+	<div class="win">
+		<div>
+			得分：<span id="winScore">8</span><br/>
+			获得<span class="ticket">满100减20</span>现金券
+		</div>
+		<div id="getNow" class="whiteBtn">立即领取</div>
+		<div id="continue" class="whiteBtn">继续挑战</div>
+	</div>
+
+	<div class="packetBox">
+		<img id="flyPacket" src="assets/flyPacket.png" >
+		<p>小零已将<span class="ticket">满100减20</span>现金券放入到你的零号线账户</p>
+		<div class="updatePhoneBox">
+			<span id="number">18362971201</span>
+			<img src="assets/updatePhoneBtn.png" >
+		</div>
+		<p>
+			每人每天2次游戏机会<br/>
+			今天已用完，明天再战吧
+		</p>
+		<div style="text-align: left; font-size: 0.6rem;line-height: 1.2rem;">
+			<span style="font-size: 1rem; font-weight: bold;">奖励说明：</span><br/>
+			1.红包券有效期以单张优惠券显示时期为准，等同零号线优惠券使用规则；<br/>
+			2.红包券可以在您的零号线个人中心查看；
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/preload1.js"></script>
+    <script src="js/main3.js"></script>
+</body>
+</html>
